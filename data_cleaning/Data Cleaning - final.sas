@@ -10,13 +10,13 @@ DATA zrlib.h1b_clean
 			AGENT_REPRESENTING_EMPLOYER 
 			FULL_TIME_POSITION 
 			H1B_DEPENDENT 
-			decision_days 			/*DECISION_DATE - CASE_SUBMITTED*/
+			decision_days           /*DECISION_DATE - CASE_SUBMITTED*/
 			case_submitted_month    /*Extraction of month from CASE_SUBMITTED*/
-			employment_len_y 		/*(EMPLOYMENT_END_DATE - EMPLOYMENT_START_DATE)/365*/
-			job_cate 				/*Classified based on SOC_CODE*/
-			ind_cate 				/*Classified based on NAICS_CODE*/
-			state_cate_4 			/*Classified based on 4 regions*/
-			wage_cate 				/*Classified based on distribution of WAGE_RATE_OF_PAY_FROM*/
+			employment_len_y        /*(EMPLOYMENT_END_DATE - EMPLOYMENT_START_DATE)/365*/
+			job_cate                /*Classified based on SOC_CODE*/
+			ind_cate                /*Classified based on NAICS_CODE*/
+			state_cate_4            /*Classified based on 4 regions*/
+			wage_cate               /*Classified based on distribution of WAGE_RATE_OF_PAY_FROM*/
 		replace=yes);
 	set zrlib.h1b_original;
 	
@@ -36,8 +36,8 @@ DATA zrlib.h1b_clean
 	case_submitted_month = month(CASE_SUBMITTED);
 	employment_len_y = (EMPLOYMENT_END_DATE - EMPLOYMENT_START_DATE)/365;	
 	format employment_len_y 4.2;
-	job_cate = substr(SOC_CODE, 1, 2);		/*Extract the first two characters*/
-	ind_cate = substr(NAICS_CODE, 1, 2);	/*Extract the first two characters*/
+	job_cate = substr(SOC_CODE, 1, 2);      /*Extract the first two characters*/
+	ind_cate = substr(NAICS_CODE, 1, 2);    /*Extract the first two characters*/
 	
 	/* Classify the jobs into 23 categoried based on SOC_CODE and SOC system,
 	   and switch the code to job category names. */
