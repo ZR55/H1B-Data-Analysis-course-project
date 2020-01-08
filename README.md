@@ -2,7 +2,7 @@
 This is a course project which was done by Janani Sathiamoorthy, Chizoba Ohalete, Aditya Amar, and me in OMIS 645 Applied Business Analytics using SAS. We cleaned up the data that we got from the website of U.S. Department of Labor by coding in SAS, and then manipulated atrributes to 
 
 # Table of Contents
-[Data Collection and Cleanup](Data-Collection-and-Cleanup)
+[Data Collection and Cleanup](https://github.com/ZR55/H1B-Data-Analysis-course-project/blob/ZR55-patch-1/README.md#data-collection-and-cleanup)
 
 asdfga
 
