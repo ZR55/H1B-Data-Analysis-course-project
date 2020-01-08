@@ -4,6 +4,10 @@ This is a course project which was done by Janani Sathiamoorthy, Chizoba Ohalete
 # Table of Contents
 [Data Collection and Cleanup](https://github.com/ZR55/H1B-Data-Analysis-course-project/blob/ZR55-patch-1/README.md#data-collection-and-cleanup)
 
+[Data Analysis and Results](https://github.com/ZR55/H1B-Data-Analysis-course-project/blob/ZR55-patch-1/README.md#data-analysis-and-results)
+
+[data-analysis-and-results]
+
 asdfga
 
 asfaw
